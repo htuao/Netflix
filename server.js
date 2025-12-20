@@ -253,7 +253,7 @@ const apiLimiter = rateLimit({
         // 跳过静态资源请求和基础配置请求
         if (!req.path.startsWith('/api/')) return true;
         // 配置和认证请求不限流（页面加载必需）
-        if (req.path === '/api/config' || req.path === '/api/auth/check' || req.path === '/api/sites') return true;
+        if (req.path === '/api/config' || req.path.startsWith('/api/auth/') || req.path === '/api/sites') return true;
         return false;
     }
 });
