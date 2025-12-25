@@ -4,7 +4,7 @@
   "webDir": "public",
   "server": {
     "url": "https://htv.goue.eu.org:333",
-    "cleartext": false
+    "cleartext"true
     },
     "plugins": {
         "StatusBar": {
@@ -15,6 +15,7 @@
     }
 
 }
+
 
 
 
