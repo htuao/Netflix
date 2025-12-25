@@ -1,9 +1,9 @@
 ﻿{
   "appId": "com.ednovas.donguatv",
-  "appName": "Netflix",
+  "appName": "HTV",
   "webDir": "public",
   "server": {
-    "url": "https://your-server.com",
+    "url": "https://htv.goue.eu.org:333",
     "cleartext": true
     },
     "plugins": {
@@ -15,3 +15,4 @@
     }
 
 }
+
