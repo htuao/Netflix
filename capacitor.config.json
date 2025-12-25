@@ -1,10 +1,10 @@
 ﻿{
-    "appId": "com.ednovas.donguatv",
-    "appName": "E视界",
-    "webDir": "public",
-    "server": {
-        "url": "https://ednovas.video",
-        "cleartext": true
+  "appId": "com.ednovas.donguatv",
+  "appName": "Netflix",
+  "webDir": "public",
+  "server": {
+    "url": "https://your-server.com",
+    "cleartext": true
     },
     "plugins": {
         "StatusBar": {
@@ -13,4 +13,5 @@
             "backgroundColor": "#000000"
         }
     }
+
 }
