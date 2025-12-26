@@ -9,11 +9,11 @@ on:
       server_url:
         description: 'Server URL (e.g. https://your-site.com)'
         required: true
-        default: 'https://ednovas.video'
+        default: 'https://htv.goue.eu.org:333'
       app_name:
         description: 'App Name'
         required: true
-        default: 'E视界'
+        default: 'HTV'
       version_tag:
         description: 'Version Tag (e.g. v1.0.0)'
         required: true
@@ -206,28 +206,28 @@ jobs:
       - name: Rename APK with version
         run: |
           mv android/app/build/outputs/apk/release/app-release.apk \
-             android/app/build/outputs/apk/release/E视界-${{ steps.version.outputs.VERSION }}-universal.apk || \
+             android/app/build/outputs/apk/release/HTV-${{ steps.version.outputs.VERSION }}-universal.apk || \
           echo "APK rename skipped"
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: E视界-apk
+          name: HTV-apk
           path: android/app/build/outputs/apk/release/*.apk
           retention-days: 30
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          name: "E视界 ${{ steps.version.outputs.VERSION }}"
+          name: "HTV ${{ steps.version.outputs.VERSION }}"
           body: |
-            ## 📦 E视界 ${{ steps.version.outputs.VERSION }}
+            ## 📦 HTV ${{ steps.version.outputs.VERSION }}
             
             ### 📱 Android APK 下载
             
             | 文件 | 说明 |
             |------|------|
-            | `E视界-${{ steps.version.outputs.VERSION }}-universal.apk` | 通用版 (支持所有设备) |
+            | `HTV-${{ steps.version.outputs.VERSION }}-universal.apk` | 通用版 (支持所有设备) |
             
             ### 🖥️ 支持的 CPU 架构
             - ✅ `armeabi-v7a` (ARM 32位 - 旧手机/盒子)
@@ -242,7 +242,7 @@ jobs:
             - ✅ 智能投影仪
             
             ### 🌐 内置服务器
-            - 默认连接: `https://ednovas.video`
+            - 默认连接: `https://htv.goue.eu.org:333`
             
             ---
             
