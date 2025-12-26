@@ -1,10 +1,10 @@
 ﻿{
-  "appId": "com.ednovas.donguatv",
-  "appName": "HTV",
-  "webDir": "public",
-  "server": {
-    "url": "https://htv.goue.eu.org:333",
-    "cleartext"true
+    "appId": "com.ednovas.donguatv",
+    "appName": "HTV",
+    "webDir": "public",
+    "server": {
+        "url": "https://htv.goue.eu.org:333",
+        "cleartext": true
     },
     "plugins": {
         "StatusBar": {
@@ -13,9 +13,6 @@
             "backgroundColor": "#000000"
         }
     }
-
 }
-
-
 
 
